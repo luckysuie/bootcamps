@@ -1,4 +1,5 @@
-Fork the repository https://github.com/spring-projects/spring-petclinic
+## Title: Deploying a Java spring boot application to AKS using Jenkins via Maven, SonarQube, Docker, Trivy, ACR
+1. Fork the repository https://github.com/spring-projects/spring-petclinic
  to your GitHub account
 
 Clone the forked repository to your local system and open it in Visual Studio Code
