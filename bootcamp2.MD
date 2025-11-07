@@ -13,17 +13,17 @@ Raw Steps:
 11.	Create a Kubernetes secret to authenticate between ACR and AKS.
 12.	In Azure DevOps, create a service connection for ACR.
 13.	Configure the CI pipeline with the following stages:
-  o	Install Java and Maven.
-  o	Prepare SonarCloud analysis.
-  o	Run Maven build with SonarQube scan.
-  o	Publish SonarCloud analysis report.
-  o	Build and push Docker image to ACR.
-  o	Perform Trivy vulnerability scan on the Docker image and publish the report.
+   - Install Java and Maven.
+   - Prepare SonarCloud analysis.
+   - Run Maven build with SonarQube scan.
+   - Publish SonarCloud analysis report.
+   - Build and push Docker image to ACR.
+   - Perform Trivy vulnerability scan on the Docker image and publish the report.
 14.	Configure the CD pipeline with the following stages:
-  o	Connect to AKS using Azure Resource Manager service connection.
-  o	Deploy Kubernetes manifests to AKS.
+   - Connect to AKS using Azure Resource Manager service connection.
+   - Deploy Kubernetes manifests to AKS.
 15.	Validate pipeline execution and verify outputs:
-  o	Successful SonarCloud analysis report.
+   - Successful SonarCloud analysis report.
   o	Trivy vulnerability report generation.
   o	Deployed web application accessible via AKS public endpoint.
 
